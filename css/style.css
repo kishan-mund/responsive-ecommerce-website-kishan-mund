@@ -1,0 +1,159 @@
+header {
+    justify-content: center;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.logo {
+    width: 95%;
+    justify-content: center;
+    display: flex;
+    letter-spacing: .3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cart-logo-box {
+    height: 1.1rem;
+    justify-content: end;
+}
+
+.cart-logo {
+    height: 1.1rem;
+}
+
+.nav-bar-box {
+    display: flex;
+    padding-top: 1rem;
+    font-size: .8rem;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+}
+
+.nav-bar {
+    width: 60%;
+    display: flex;
+    font-size: .8rem;
+    justify-content: space-around;
+}
+
+
+.footer-div {
+    justify-content: center;
+    display: flex;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    color: gray;
+}
+
+.footer-div-demo {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.product-details-box {}
+
+.product-img-1 {
+    background-image: url(../images/mens_outerwear.jpg);
+    background-size: cover;
+    min-height: 20rem;
+    background-position: center;
+}
+
+.product-img-2 {
+    background-image: url(../images/ladies_outerwear.jpg);
+    background-size: cover;
+    min-height: 20rem;
+    background-position: center;
+}
+
+.product-img-3 {
+    display: flex;
+}
+
+.product-img-3-1 {
+    width: 50%;
+}
+
+.product-img-3-2 {
+    width: 50%;
+    background-size: cover;
+}
+
+.product-img-3-1-1 {
+    background-image: url(../images/mens_tshirts.jpg);
+    background-size: cover;
+    min-height: 20rem;
+    background-position: center;
+}
+
+.product-img-3-1-2 {
+    background-image: url(../images/ladies_tshirts.jpg);
+    background-size: cover;
+    min-height: 20rem;
+    background-position: center;
+}
+
+
+.product-img-label {
+    justify-content: center;
+    display: flex;
+    padding: 2rem 0 1rem 0;
+}
+
+.product-shop-now-box {
+    justify-content: center;
+    display: flex;
+    padding: 1rem 0 1rem 0;
+}
+
+.product-shop-now {
+    border: 2px solid;
+    padding: .5rem 2.5rem;
+}
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+    .header-menu-box {
+        height: 1.1rem;
+    }
+
+    .header-menu {
+        width: 1rem;
+        height: 0.1rem;
+        background-color: black;
+        margin: .15rem 0;
+    }
+
+    .nav-bar-box {
+        display: none;
+    }
+
+    .product-img-3 {
+        display: block;
+    }
+
+    .product-img-3-1 {
+        width: 100%;
+    }
+
+    .product-img-3-2 {
+        width: 100%;
+    }
+}
