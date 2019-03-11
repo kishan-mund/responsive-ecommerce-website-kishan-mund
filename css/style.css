@@ -5,6 +5,10 @@ header {
     padding-bottom: 1rem;
 }
 
+h1 {
+    font-weight: 100;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -124,6 +128,86 @@ footer {
     padding: .5rem 2.5rem;
 }
 
+.product-display-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.product-display-img-box {
+    width: 50%;
+    height: auto;
+    display: flex;
+    /* margin: 3rem 0; */
+    padding: 3rem 3rem;
+}
+
+.product-display-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 3rem 1rem;
+}
+
+.product-display-details {
+    width: 50%;
+    height: auto;
+    font-size: .8rem;
+    margin: 3rem 1rem;
+}
+
+.price {
+    color: gray;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+.size {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid gray;
+    color: gray;
+
+}
+
+.quantity {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid gray;
+    color: gray;
+    border-bottom: 2px solid gray;
+    margin-bottom: 2rem;
+}
+
+.size-options {
+    width: 90%;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+}
+
+.quantity-options {
+    width: 84%;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1rem;
+}
+
+.add-to-cart {
+    justify-content: center;
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    border: 2px solid black;
+    margin: 30%;
+}
+
+.description {
+    margin-bottom: 0rem;
+}
+
 
 
 
@@ -155,5 +239,43 @@ footer {
 
     .product-img-3-2 {
         width: 100%;
+    }
+
+    .product-display-box {
+        display: block;
+        width: 100%;
+    }
+
+    .product-display-img-box {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .product-display-details {
+        width: 100%;
+        margin: 0;
+    }
+
+    .product-display-img {
+        margin: 0;
+    }
+
+    .add-to-cart {
+        margin: 0;
+        position: fixed;
+        right: 1px;
+        left: 1px;
+        bottom: 0px;
+        background-color: blue;
+    }
+
+    .description {
+        margin-bottom: 8rem;
+    }
+
+    footer {
+        display: none;
     }
 }
