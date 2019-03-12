@@ -19,11 +19,26 @@ footer {
     margin-top: 1rem;
 }
 
+input {
+    width: 100%;
+    border: 0ch;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: transparent;
+}
+
+select {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+}
+
 .logo {
     width: 95%;
     justify-content: center;
     display: flex;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -40,7 +55,7 @@ footer {
 .nav-bar-box {
     display: flex;
     padding-top: 1rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
     justify-content: space-around;
     padding-bottom: 1.5rem;
 }
@@ -48,16 +63,15 @@ footer {
 .nav-bar {
     width: 60%;
     display: flex;
-    font-size: .8rem;
+    font-size: 0.8rem;
     justify-content: space-around;
 }
-
 
 .footer-div {
     justify-content: center;
     display: flex;
-    padding-bottom: .5rem;
-    padding-top: .5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     color: gray;
 }
 
@@ -110,7 +124,6 @@ footer {
     background-position: center;
 }
 
-
 .product-img-label {
     justify-content: center;
     display: flex;
@@ -125,7 +138,7 @@ footer {
 
 .product-shop-now {
     border: 2px solid;
-    padding: .5rem 2.5rem;
+    padding: 0.5rem 2.5rem;
 }
 
 .product-display-box {
@@ -152,7 +165,7 @@ footer {
 .product-display-details {
     width: 50%;
     height: auto;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin: 3rem 1rem;
 }
 
@@ -166,9 +179,7 @@ footer {
     width: 100%;
     font-size: 1rem;
     padding: 1rem 0;
-    border-top: 1px solid gray;
     color: gray;
-
 }
 
 .quantity {
@@ -206,14 +217,93 @@ footer {
 
 .description {
     margin-bottom: 0rem;
+    margin-top: 2rem;
+    line-height: 1rem;
 }
 
+.checkout-box {
+    width: 100%;
+}
 
+.checkout-box-header {
+    width: 100%;
+    justify-content: center;
+}
 
+.checkout-box-header-1 {
+    font-weight: 100;
+    text-align: center;
+}
 
+.checkout-box-header-tag {
+    text-align: center;
+    color: gray;
+    font-size: .9rem;
+}
 
+.checkout-box-part {
+    display: flex;
+}
 
-@media only screen and (max-width:767px) {
+.checkout-box-part1 {
+    width: 50%;
+    padding: 3rem;
+}
+
+.checkout-box-part2 {
+    width: 50%;
+    padding: 3rem;
+}
+
+.checkout-box-header-1-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-box-header-1-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: .8rem;
+}
+
+.checkout-box-part-def {
+    margin-top: 1rem;
+}
+
+.address {
+    margin-top: 1rem;
+}
+
+.inp-sep {
+    width: 48%;
+    display: flex;
+}
+
+.month-options {
+    width: 30%;
+}
+
+.year-options {
+    width: 30%;
+}
+
+.cvv {
+    width: 30%;
+}
+
+.country-options {
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+@media only screen and (max-width: 767px) {
     .header-menu-box {
         height: 1.1rem;
     }
@@ -222,7 +312,7 @@ footer {
         width: 1rem;
         height: 0.1rem;
         background-color: black;
-        margin: .15rem 0;
+        margin: 0.15rem 0;
     }
 
     .nav-bar-box {
@@ -250,7 +340,6 @@ footer {
         width: 100%;
         padding: 0;
         margin: 0;
-
     }
 
     .product-display-details {
@@ -275,7 +364,21 @@ footer {
         margin-bottom: 8rem;
     }
 
-    footer {
-        display: none;
+    .quantity {
+        width: 100%;
+    }
+
+    .checkout-box-part1 {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .checkout-box-part2 {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .checkout-box-part {
+        display: block;
     }
 }
