@@ -22,10 +22,11 @@ footer {
 input {
     width: 100%;
     border: 0ch;
-    border-bottom: 1px solid gray;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    border-bottom: 1px solid gainsboro;
+    padding-top: 2rem;
+
     background-color: transparent;
+    outline: none;
 }
 
 select {
@@ -33,6 +34,28 @@ select {
     border: 0;
     border-bottom: 1px solid;
 }
+
+
+
+input:focus-within::placeholder {
+    color: transparent;
+    border-bottom: 1px solid black;
+}
+
+input:focus-within~label {
+
+    color: black;
+    transition: .5s;
+}
+
+
+label {
+    color: transparent;
+    top: -3rem;
+    position: relative;
+}
+
+label:focus-within {}
 
 .logo {
     width: 95%;
@@ -301,6 +324,31 @@ select {
     width: 100%;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+
+.header-menu-box:hover #nov-hover {
+    display: block;
+}
+
+.header-menu-box #nov-hover {
+    display: none;
+    position: fixed;
+    background-color: white;
+    width: 25%;
+    color: gray;
+    line-height: 1rem;
+    height: 100%;
+
+
+}
+
+.menu-hover-items {
+    padding: 1rem;
+}
+
+.a-hover {
+
+    color: gray;
 }
 
 @media only screen and (max-width: 767px) {
