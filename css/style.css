@@ -5,6 +5,11 @@ header {
     padding-bottom: 1rem;
 }
 
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
 h1 {
     font-weight: 100;
 }
@@ -33,30 +38,69 @@ select {
     background-color: transparent;
     border: 0;
     border-bottom: 1px solid;
+    outline: none;
 }
 
 
 
 input:focus-within::placeholder {
     color: transparent;
-    border-bottom: 1px solid black;
 }
 
+
 input:focus-within~label {
+
+    color: grey;
+    top: -3rem;
+    transition: .5s;
+}
+
+input:focus-within~.cvv-label {
+
+    color: black;
+    top: -1rem;
+
+}
+
+label {
+    transition: .5s;
+    color: transparent;
+    top: -2rem;
+    position: relative;
+}
+
+
+input:focus-within~.border {
+
+    background-color: black;
+    transform: scaleX(1000);
+
+}
+
+input:focus-within~.border-cvv {
+
+    background-color: black;
+    transform: scaleX(1000);
+
+}
+
+select:focus-within~label {
 
     color: black;
     top: -3rem;
     transition: .5s;
 }
 
-
-label {
-    color: transparent;
-    top: -2rem;
-    position: relative;
+.cvv-label {
+    top: 0%;
+    left: -6rem;
+    transition: .5s;
 }
 
-label:focus-within {}
+
+
+
+
 
 .logo {
     width: 95%;
@@ -105,21 +149,21 @@ label:focus-within {}
     padding: 1rem;
 }
 
-.product-details-box {}
-
-.product-img-1 {
-    background-image: url(../images/mens_outerwear.jpg);
+.product-img {
     background-size: cover;
     min-height: 20rem;
     background-position: center;
+}
+
+
+.product-img-1 {
+    background-image: url(../images/mens_outerwear.jpg);
 }
 
 .product-img-2 {
     background-image: url(../images/ladies_outerwear.jpg);
-    background-size: cover;
-    min-height: 20rem;
-    background-position: center;
 }
+
 
 .product-img-3 {
     display: flex;
@@ -136,16 +180,10 @@ label:focus-within {}
 
 .product-img-3-1-1 {
     background-image: url(../images/mens_tshirts.jpg);
-    background-size: cover;
-    min-height: 20rem;
-    background-position: center;
 }
 
 .product-img-3-1-2 {
     background-image: url(../images/ladies_tshirts.jpg);
-    background-size: cover;
-    min-height: 20rem;
-    background-position: center;
 }
 
 .product-img-label {
@@ -232,11 +270,9 @@ label:focus-within {}
 }
 
 .add-to-cart {
-    justify-content: center;
-    display: flex;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 5rem 1rem 5rem;
     border: 2px solid black;
-    margin: 30%;
+    margin-top: 10%;
 }
 
 .description {
@@ -317,7 +353,8 @@ label:focus-within {}
 }
 
 .cvv {
-    width: 30%;
+    width: 40%;
+    margin-left: 1rem;
 }
 
 .country-options {
@@ -349,6 +386,37 @@ label:focus-within {}
 .a-hover {
 
     color: gray;
+}
+
+.border {
+    height: 2px;
+    width: 1px;
+    background-color: transparent;
+    position: relative;
+    left: 50%;
+    bottom: 1.3rem;
+    transition: .5s;
+}
+
+.border-cvv {
+    height: 2px;
+    width: 1px;
+    background-color: transparent;
+    position: relative;
+    left: 50%;
+    transition: .5s;
+}
+
+.animation {
+    overflow: hidden;
+    width: auto;
+}
+
+.animation-cvv {
+    overflow: hidden;
+    width: 30%;
+    margin-bottom: -1.3rem;
+    margin-left: .5rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -394,6 +462,7 @@ label:focus-within {}
         position: fixed;
         right: 1px;
         left: 1px;
+        width: 100%;
         bottom: 0px;
         background-color: blue;
     }
