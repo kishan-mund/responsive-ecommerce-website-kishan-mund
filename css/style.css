@@ -45,13 +45,14 @@ input:focus-within::placeholder {
 input:focus-within~label {
 
     color: black;
+    top: -3rem;
     transition: .5s;
 }
 
 
 label {
     color: transparent;
-    top: -3rem;
+    top: -2rem;
     position: relative;
 }
 
@@ -304,7 +305,6 @@ label:focus-within {}
 }
 
 .inp-sep {
-    width: 48%;
     display: flex;
 }
 
@@ -367,17 +367,7 @@ label:focus-within {}
         display: none;
     }
 
-    .product-img-3 {
-        display: block;
-    }
 
-    .product-img-3-1 {
-        width: 100%;
-    }
-
-    .product-img-3-2 {
-        width: 100%;
-    }
 
     .product-display-box {
         display: block;
