@@ -240,33 +240,45 @@ select:focus-within~label {
 .size {
     width: 100%;
     font-size: 1rem;
-    padding: 1rem 0;
+    display: flex;
     color: gray;
 }
 
+.size-box {
+    display: flex;
+    padding: 1rem 0;
+    padding-right: 1.8rem;
+}
+
 .quantity {
+    display: flex;
     width: 100%;
     font-size: 1rem;
-    padding: 1rem 0;
     border-top: 1px solid gray;
     color: gray;
     border-bottom: 2px solid gray;
     margin-bottom: 2rem;
 }
 
+.quantity-box {
+    display: flex;
+    padding: 1rem 0;
+}
+
 .size-options {
-    width: 90%;
+    width: 100%;
     background-color: transparent;
     border-color: transparent;
     font-size: 1rem;
-    padding-left: 1.5rem;
+    display: flex;
 }
 
 .quantity-options {
-    width: 84%;
+    width: 100%;
     background-color: transparent;
     border-color: transparent;
     font-size: 1rem;
+    display: flex;
 }
 
 .add-to-cart {
@@ -359,8 +371,6 @@ select:focus-within~label {
 
 .country-options {
     width: 100%;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
 }
 
 .header-menu-box:hover #nov-hover {
@@ -409,7 +419,16 @@ select:focus-within~label {
 
 .animation {
     overflow: hidden;
-    width: auto;
+    width: 100%;
+}
+
+.animation-sp {
+    margin-right: 1rem;
+}
+
+.animation-country {
+    margin-left: 1rem;
+
 }
 
 .animation-cvv {
